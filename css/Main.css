@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+/*body{
+ background-image: linear-gradient(rgba(0, 0, 10, 0.4), rgba(5, 0, 0, 0.05)), url("../images/heroshot16-9.png");
+}*/
+.bg { 
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 10, 0.4), rgba(0, 0, 10, 0.2)), url("../images/heroshot16-91.png");
+  /* Full height */
+  height: 100%; 
+  margin: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title{
+	font-size: 130px;
+	font-family: Baskerville;
+	position: absolute;
+    /*bottom: 110px;*/
+	top: 10%;
+	right: 40px;
+	color:#E5D1AB;
+	line-height: 1.1;
+	text-align: right;
+	padding-right: 60px;
+
+}
+.instruction{
+	position: absolute;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 50%;
+	left: 5%;
+	color: #E5D1AB;
+	padding-right: 40%;
+	font-size: 30px;
+	text-align: left;
+	line-height: 1.5;
+}
+
+/* Dropup Button */
+.dropup{
+position:absolute;
+right:10%;
+bottom: 10%;
+}
+
+.dropbtn {
+border-radius: 10px;
+background-color: #C00E27;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 36px;
+font-family:Georgia, "serif";
+padding: 30px;
+width: 300px;
+transition: all 0.4s;
+cursor: pointer;
+
+}
+.dropup:hover .dropbtn {
+	background-color: rgba(189,18,49,0.63);
+}
+
+.dropbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+/*arrow*/
+.dropbtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.dropbtn:hover span {
+  padding-right: 25px;
+}
+
+.dropbtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  min-width: 300px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+  border-radius: 10px;
+  
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  padding: 40px 5px;
+  background-color: rgba(255,255,255,0.19);
+  display: block;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: transparent;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: rgba(192,14,39,0.84)}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}

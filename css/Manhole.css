@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background-color: rgba(59,79,72,0.95);
+}
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -100px; /* Position them outside of the screen */
+  transition: 0.15s; /* Add transition on hover */
+  padding: 20px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  font-family:Georgia, "serif";
+  color: white; /* White text color */
+  border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
+  border: solid 3px rgba(228,228,228,0.85);
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#home {
+  top: 20px;
+  position: fixed;
+  background-color: rgba(116,10,16,0.63);
+}
+
+#mark {
+  top: 90px;
+	position:fixed;
+  background-color: rgba(255,255,255,0.30); 
+}
+
+#signal {
+  top: 160px;
+	position: fixed;
+  background-color: rgba(255,255,255,0.30); 
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 10%;
+}
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+width: 160%; display: block;
+margin-left: auto;
+margin-right: auto;
+/*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: 50%;
+	height: 50%;
+}
+
+.g-30{
+	width: 30%;
+	height: 30%;
+
+}
+
+.g-70{
+	width: 50%;
+}
+
+.title{
+	font-size: 110px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	position: fixed;
+	top:10%;
+	left: 50%;
+	right: 80px;
+	color: #F9F9F9;
+	line-height: 1.1;
+	text-align: left;
+
+	
+}
+.introduction{
+	position: fixed;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	left: 50%;
+	top: 35%;
+	right: 10%;
+	font-size: 30px;
+	text-align: left;
+	line-height: 1.5;
+	color: #F9F9F9;
+	padding:20px;
+	border-left: solid 5px rgba(249,249,249,1.00);
+	border-top: solid 5px rgba(249,249,249,1.00);
+}
+.context{
+	position: absolute;
+	left:20%;
+	top:10%;
+	z-index: 2;
+
+}
+.m1{
+	color: white;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 25px;
+
+}
+.m2{
+	color: white;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 25px;
+
+}
+.m3{
+	color: white;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 25px;
+
+}
+
+
+

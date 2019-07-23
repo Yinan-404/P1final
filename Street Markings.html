@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Street Marking</title>
+<link href="css/marks.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="images/icon.png">
+
+</head>
+
+<body>
+	<div class="bg"></div>
+	<style>
+	.circle {
+	  height: 1200px;
+	  width: 900px;
+	  background-color: rgba(255,255,255,0.25);
+	  /*border-radius: 50%;*/
+	  position:fixed;
+	  left: 10%;
+	  top:-10%;
+	  z-index: 0;
+	}
+	.rectangle{
+		top:5%;
+		position: absolute;
+		height: 200px;
+		width: 800px;
+		background-color:rgba(173,140,72,0.50);
+		z-index: -1;
+		}
+	.rectangle1{
+		bottom:5%;
+		right: 0;
+		position: absolute;
+		height: 200px;
+		width: 1000px;
+		background-color: rgba(173,140,72,0.50);
+		z-index: -1;
+	
+		}
+	</style>
+	<div class="circle"></div>
+	<div class="rectangle"></div>
+	<div class="rectangle1"></div>
+	
+	<div id="mySidenav" class="sidenav">
+	  <a href="index.html" id="Home">Home</a>
+	  <a href="Manhole.html" id="Manholes">Manholes</a>
+	  <a href="Signal-tower.html" id="tower">Towers</a>
+	</div>
+	<section>
+			<h1 class="title">Street Markings</h1>
+			<p class="introduction">The notes on the streets can be seen everywhere. They are the information recording how the networks go in their area. For those who are not experts, it is quite hard to understand what they stand for.</p>
+	</section>
+	
+	
+	<section class="context">
+				<div class="g-row">
+					<div class="g-30">
+				    	<img src="images/markings/s5.png">
+					</div>
+					<div class="g-70 padded">
+						<p class="m1">This sign is consisted of numbers and a line.</p>
+					</div>
+				</div>
+
+				<div class="g-row">
+					<div class="g-30">
+						<img src="images/markings/s4.png">
+					</div>
+					<div class="g-70 padded">
+						<p class="m2">This mark is more abstract. It has several arrows to show its direction of the cable.</p>
+					</div>
+				</div>
+
+				<div class="g-row">
+					<div class="g-30">
+				      <img src="images/markings/s1.png">
+					</div>
+					<div class="g-70 padded">
+						<p class="m3">This marks has characters and arrows. It seems that there are two direction of the data trails.</p>
+					</div>
+				</div>
+			</section>
+</body>
+</html>

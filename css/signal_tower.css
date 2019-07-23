@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 10, 6, 0.4), rgba(0, 10, 6, 0.05)),url("../images/tower1.png");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main{
+  width: 30%;
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 0;
+
+}
+
+.title{
+	font-size: 100px;
+	font-family: Baskerville;
+	position: absolute;
+    /*bottom: 110px;*/
+	top: 15%;
+	left: 50%;
+	color: #F9F9F9;
+	line-height: 1.1;
+	text-align: right;
+	padding-right: 60px;
+	/*border-left: 6px solid rgba(113,34,44,1.00);
+	padding-left:35px;*/
+}
+.introduction{
+	position: absolute;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	left: 40%;
+	top: 38%;
+	right:10%;
+	font-size: 30px;
+	text-align: left;
+	line-height: 1.5;
+	color: #F9F9F9;
+	padding:20px;
+	border-left: solid 5px rgba(249,249,249,1.00);
+	border-top: solid 5px rgba(249,249,249,1.00);
+}
+
+.note{
+	position: absolute;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	right: 5%;
+	bottom: 10%;
+	font-size: 20px;
+	text-align: left;
+	line-height: 1.5;
+	color: #F9F9F9;
+	padding-right: 60px;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -100px; /* Position them outside of the screen */
+  transition: 0.15s; /* Add transition on hover */
+  padding: 20px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  font-family:Georgia, "serif";
+  color: white; /* White text color */
+  border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
+  border: solid 3px rgba(228,228,228,0.85);
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#Home {
+  top: 20px;
+  background-color: rgba(116,10,16,0.63);
+}
+
+#Manholes {
+  top: 90px;
+  background-color: rgba(255,255,255,0.30);
+}
+
+#mark{
+  top: 160px;
+  background-color: rgba(255,255,255,0.30);
+}
+
